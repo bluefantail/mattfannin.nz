@@ -6,7 +6,16 @@ body {
 }
 
 section {
-  padding: 3em;
+  padding: 2em 5em;
+  transition: padding 0.2s ease-in;
+
+  @media(max-width: 1000px) {
+    padding: 1em 2.5em;
+  }
+
+  @media(max-width: 800px) {
+    padding: 0 1em;
+  }
 }
 
 h1 {
