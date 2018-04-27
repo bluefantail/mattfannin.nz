@@ -5,6 +5,7 @@ import flickrgal from "js/flickrgal.min.js"
 
 import styles from "styles/main.scss"
 import flickrgalStyles from "styles/flickrgal.scss"
+import loading from "styles/loading.scss"
 
 export default () =>
   <section>
