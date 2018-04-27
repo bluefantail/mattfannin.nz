@@ -97,7 +97,9 @@
 			.image-loading{
 				position: absolute;
 				z-index: 0;
-				// @include animate(1s);
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
 			}
 			.dummy {
 				margin-top: $tile-height;
