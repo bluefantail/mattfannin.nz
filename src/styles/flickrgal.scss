@@ -9,12 +9,13 @@
 	// Image Variables
 	$image-grid: (
 		aspect:  16/9, // Set image aspect ratio e.g. 4/3 == 4:3
-		padding: 3px, // Space between images
-		default-cols: 3 // Default number of columns
+		padding: 5px, // Space between images
+		default-cols: 4 // Default number of columns
 	);
 	// Gallery Breakpoints (max-width, columns)
 	$breakpoints: (
-		(750px, 2),
+		(1200px, 3),
+		(850px, 2),
 		(450px, 1)
 	);
 	// END CONFIGURATION

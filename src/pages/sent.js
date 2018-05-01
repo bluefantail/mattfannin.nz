@@ -1,8 +1,6 @@
 import React from "react"
 
-import FlickrGal from "components/flickrgal.js"
-
 export default () =>
   <section>
-    <FlickrGal />
+    <h1>Thanks!</h1>
   </section>
