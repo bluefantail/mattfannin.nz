@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     "nav nav"
   ;
 
-  @media (min-aspect-ratio: break(aspect-square)) {
+  @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
     grid-template-areas:
     "nav content"
     ;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
 
-    @media (min-aspect-ratio: break(aspect-square)) {
+    @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
       padding: 2.5em 2.5em 0;
       box-sizing: border-box;
       flex-direction: column;
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
 
-    @media (min-aspect-ratio: break(aspect-square)) {
+    @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
       padding: 2.5em 2.5em 0;
       justify-content: flex-start;
     }
@@ -143,7 +143,7 @@ form.contact {
   width: 100%;
   margin-top: 3em;
 
-  @media (min-aspect-ratio: break(aspect-square)) {
+  @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
     margin-top: 0;
   }
 
