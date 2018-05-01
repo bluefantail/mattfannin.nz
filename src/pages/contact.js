@@ -2,7 +2,7 @@ import React from "react"
 
 export default () =>
   <section>
-    <form name="contact" className="contact" data-netlify data-netlify-honeypot="bot-field" method="POST" action="/sent/">
+    <form name="contact" className="contact" data-netlify data-netlify-honeypot="bot-field" method="POST">
       <label htmlFor="message-name">Name</label>
       <input type="text" name="name" id="message-name" placeholder="Your name" />
 
