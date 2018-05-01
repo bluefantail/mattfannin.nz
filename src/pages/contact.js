@@ -2,12 +2,18 @@ import React from "react"
 
 export default () =>
   <section>
-    <form name="contact" data-netlify data-netlify-honeypot="bot-field" method="POST" action="/sent/">
-      <label for="name">Name</label>
-      <label>Your Name: <input type="text" name="name" /></label>
-      <label>Your Email: <input type="email" name="email" /></label>
-      <label>Message: <textarea name="message"></textarea></label>
+    <form name="contact" className="contact" data-netlify data-netlify-honeypot="bot-field" method="POST" action="/sent/">
+      <label htmlFor="message-name">Name</label>
+      <input type="text" name="name" id="message-name" placeholder="Your name" />
+
+      <label htmlFor="message-email">Email</label>
+      <input type="email" name="email" id="message-email" placeholder="youremail@domain.com" />
+
+      <label htmlFor="message-body">Message</label>
+      <textarea name="message" id="message-body" placeholder="Hey Matt ..." ></textarea>
+
       <input name="metal" className="bot-field" />
-      <button type="submit">Send</button>
+
+      <button type="submit">Send message</button>
     </form>
   </section>

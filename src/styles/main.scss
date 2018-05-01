@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  padding: 0.5em;
   transition: padding 0.2s ease-in;
   display: grid;
   grid-template-columns: 1fr 3fr;
@@ -97,9 +96,54 @@ h1, h2, h3, h4, h5, h6 {
 
   > section {
     grid-area: content;
+
+    @media (min-aspect-ratio: break(aspect-square)) {
+      padding: 2.5em 2.5em 0;
+    }
   }
 }
 
-.metal {
+form.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 35em;
+
+  label {
+    margin-bottom: 0.5em;
+  }
+
+  input,
+  textarea,
+  button {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    padding: 1em;
+    outline: none;
+    transition: all 0.125s ease-in;
+
+    &::placeholder {
+      color: #ccc;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 0px 3px rgba(200, 200, 200, 0.1);
+    }
+
+    &:focus {
+      border-color: #ccc;
+      box-shadow: 0px 0px 0px 3px rgba(200, 200, 200, 0.3);
+    }
+  }
+
+  textarea {
+    min-height: 8em;
+  }
+}
+
+.bot-field {
   display: none;
 }
