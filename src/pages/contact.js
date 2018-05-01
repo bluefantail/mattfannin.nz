@@ -12,7 +12,7 @@ export default () =>
       <label htmlFor="message-body">Message</label>
       <textarea name="message" id="message-body" placeholder="Hey Matt ..." ></textarea>
 
-      <input name="metal" className="bot-field" />
+      <input name="bot-field" className="bot-field" />
 
       <button type="submit">Send message</button>
     </form>
