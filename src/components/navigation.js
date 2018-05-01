@@ -10,7 +10,7 @@ class Nav extends React.Component {
           <div className="description">Designer & Photographer</div>
         </span>
         <Link to="/" activeClassName="active" exact>Photography</Link>
-        <Link to="/contact" activeClassName="active" exact>Get in touch</Link>
+        {/*<Link to="/contact" activeClassName="active" exact>Get in touch</Link>*/}
       </nav>
     )
   }
