@@ -46,6 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 
     grid-area: nav;
     display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 8;
+    background: #fff;
+    width: 100%;
+    padding: 0.75em;
 
     a {
       display: inline-block;
@@ -54,9 +61,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     > a {
-      margin-bottom: $item-spacing;
       padding: 1ch 1em;
       border-radius: 2em;
+      font-size: 0.85em;
+
+      &:not(:last-of-type) {
+        margin-right: $item-spacing;
+      }
 
       &:hover {
         background-color: $grey-lightest;
@@ -68,16 +79,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     > span {
+      margin-right: $item-spacing;
+
       > a {
+        font-size: 1.1em;
         font-weight: 600;
-        font-size: 2em;
         color: $grey-dark;
       }
 
       .description {
         font-weight: 300;
-        font-size: 1.2em;
-        line-height: 2em;
+        font-size: 0.75em;
+        line-height: 1.5em;
       }
     }
 
@@ -87,18 +100,38 @@ h1, h2, h3, h4, h5, h6 {
       flex-direction: column;
       align-items: flex-start;
       position: fixed;
+      top: 0;
+      width: auto;
+      background: none;
+
+      > a {
+        margin-bottom: $item-spacing;
+        font-size: 1em;
+      }
 
       > span {
         margin-bottom: $item-spacing * 2;
+
+        > a {
+          font-size: 2em;
+        }
+
+        .description {
+          font-size: 1.2em;
+          line-height: 2em;
+        }
       }
     }
   }
 
   > section {
     grid-area: content;
+    display: flex;
+    justify-content: center;
 
     @media (min-aspect-ratio: break(aspect-square)) {
       padding: 2.5em 2.5em 0;
+      justify-content: flex-start;
     }
   }
 }
@@ -107,6 +140,12 @@ form.contact {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 35em;
+  width: 100%;
+  margin-top: 3em;
+
+  @media (min-aspect-ratio: break(aspect-square)) {
+    margin-top: 0;
+  }
 
   label {
     margin-bottom: 0.5em;
