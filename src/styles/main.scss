@@ -1,29 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
+$grey-lightest: #eaeaea;
+$grey-light: #cccccc;
+$grey: #666666;
+$grey-dark: #4f4f4f;
+$grey-darkest: #222222;
+
+$breakpoints: (
+  aspect-square: "1/1",
+  wide: "1200px",
+  narrow: "750px"
+);
+
+@function break($size) {
+  @return map-get($breakpoints, $size);
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #4f4f4f;
+  color: $grey;
+  margin: 0;
 }
 
-section {
-  padding: 2em 5em;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.container {
+  padding: 0.5em;
   transition: padding 0.2s ease-in;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "content content"
+    "nav nav"
+  ;
 
-  @media(max-width: 1000px) {
-    padding: 1em 2.5em;
+  @media (min-aspect-ratio: break(aspect-square)) {
+    grid-template-areas:
+    "nav content"
+    ;
   }
 
-  @media(max-width: 800px) {
-    padding: 0 1em;
+  > nav {
+    $item-spacing: 1em;
+
+    grid-area: nav;
+    display: flex;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $grey-darkest;
+    }
+
+    > a {
+      margin-bottom: $item-spacing;
+      padding: 1ch 1em;
+      border-radius: 2em;
+
+      &:hover {
+        background-color: $grey-lightest;
+      }
+
+      &.active {
+        background-color: $grey-lightest;
+      }
+    }
+
+    > span {
+      > a {
+        font-weight: 600;
+        font-size: 2em;
+        color: $grey-dark;
+      }
+
+      .description {
+        font-weight: 300;
+        font-size: 1.2em;
+        line-height: 2em;
+      }
+    }
+
+    @media (min-aspect-ratio: break(aspect-square)) {
+      padding: 2.5em 2.5em 0;
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+
+      > span {
+        margin-bottom: $item-spacing * 2;
+      }
+    }
+  }
+
+  > section {
+    grid-area: content;
   }
 }
 
-h1 {
-  font-weight: 600;
-  font-size: 2em;
-}
-
-p {
-  font-weight: 300;
-  font-size: 1.2em;
+.metal {
+  display: none;
 }
