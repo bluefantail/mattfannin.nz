@@ -165,6 +165,10 @@ form.contact {
     font-family: inherit;
     font-size: inherit;
     outline: none;
+  }
+
+  input,
+  textarea {
     transition: all 0.125s ease-in;
 
     &:hover {
@@ -196,15 +200,54 @@ form.contact {
 
   button {
     justify-self: center;
-    border-radius: 2em;
-    padding: 1ch 1em;
-    background-color: $action;
-    color: tint($action, 90%);
-    border: none;
-    cursor: pointer;
+  }
+}
 
-    &:hover {
-      background-color: shade($action, 10%);
+// button
+button {
+  background-color: $action;
+  color: tint($action, 90%);
+  padding: 1ch 1em;
+  border-radius: 2em;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  transition: 0.125s ease-in-out;
+  box-shadow: 0 0 0 -1px tint(#0000ff, 60%);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: tint(#0000ff, 25%);
+    box-shadow: 0 4px 0 -1px tint(#0000ff, 60%);
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    background-color: shade(#0000ff, 20%);
+    box-shadow: 0 0 0 -1px shade(#0000ff, 50%);
+    transform: translateY(0);
+    transition: 0s ease-in-out;
+  }
+
+  &::-moz-focus-inner {
+    border: none;
+  }
+
+  // Touch based devices
+  @media (hover: none) {
+    box-shadow: 0 4px 0 -1px tint(#0000ff, 60%);
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 4px 0 -1px tint(#0000ff, 60%);
+      transform: translateY(0);
+    }
+
+    &:active {
+      box-shadow: 0 0 0 -1px shade(#0000ff, 50%);
+      transform: translateY(4px);
     }
   }
 }
