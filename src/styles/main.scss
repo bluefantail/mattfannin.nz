@@ -102,9 +102,9 @@ a {
     }
 
     @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
-      width: auto;
+      width: 25%;
       flex-direction: column;
-      padding: 2.5em 0 0 2.5em;
+      padding: 2.5em 1.5em 0 2em;
       align-items: flex-start;
       position: fixed;
 
@@ -190,11 +190,49 @@ a {
     grid-area: content;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 0 0.5em 5em;
 
-    @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
+    p {
+      font-size: 1.15em;
+      padding: 0 0.45em;
+      margin: 0 0 1em;
+      line-height: 1.65;
+
+      > a {
+        color: $action;
+      }
+    }
+
+    @media (min-width: break(narrow)) {
       padding: 2.5em 2.5em 2.5em;
       justify-content: flex-start;
+
+      p {
+        padding: 0 3em 0 0;
+        font-size: 1.4em;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      p {
+        padding: 0 4em 0 0;
+        font-size: 1.6em;
+      }
+    }
+
+    @media (min-width: break(wide)) {
+      p {
+        padding: 0 5em 0 0;
+        font-size: 1.7em;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      p {
+        padding: 0 10em 0 0;
+        font-size: 1.85em;
+      }
     }
   }
 }

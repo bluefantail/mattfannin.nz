@@ -5,7 +5,8 @@ class Nav extends React.Component {
   render() {
     return (
       <nav>
-        <Link to="/" activeClassName="active" exact>Photography</Link>
+        <Link to="/" activeClassName="active" exact>About me</Link>
+        <Link to="/photography" activeClassName="active" exact>Photography</Link>
         <Link to="/contact" activeClassName="active" exact>Get in touch</Link>
       </nav>
     )
