@@ -8,7 +8,7 @@ class Header extends React.Component {
     return (
       <header>
         <a href="#" className="profile">
-          <img src="http://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=1200"></img>
+          <img src="http://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=280"></img>
         </a>
 
         <div>
