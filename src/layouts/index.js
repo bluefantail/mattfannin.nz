@@ -17,7 +17,7 @@ export default ({ children }) => (
     <Header />
     <Nav />
     {children()}
-    <div className="profile-detail visible">
+    <div className="profile-detail">
       <img src="http://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=1000"></img>
       <span>
         <a href="https://github.com/bluefantail" className="github" target="_blank"></a>
