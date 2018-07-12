@@ -249,11 +249,14 @@ a {
   padding: 3em;
   visibility: hidden;
   opacity: 0;
+  transform: scale(0.25);
+  transform-origin: top left;
   transition: all 0.25s ease-in-out;
 
   &.visible {
     visibility: visible;
     opacity: 1;
+    transform: scale(1);
   }
 
   > img {
