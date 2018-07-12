@@ -9,12 +9,17 @@ class Header extends React.Component {
     let profileDetail = document.querySelector('.profile-detail');
     let closeProfile = document.querySelector('.close-profile');
 
-    profile.addEventListener('click', function() {
+    function toggleProfileDetail() {
       profileDetail.classList.toggle('visible');
-    });
+    }
 
-    closeProfile.addEventListener('click', function() {
-      profileDetail.classList.toggle('visible');
+    profile.addEventListener('click', toggleProfileDetail);
+    closeProfile.addEventListener('click', toggleProfileDetail);
+
+    window.addEventListener('keydown', event => {
+      if (profileDetail.classList.contains('visible')) {
+        if (event.key === 'Escape' || event.keyCode === 27) toggleProfileDetail();
+      }
     });
   }
   render() {
