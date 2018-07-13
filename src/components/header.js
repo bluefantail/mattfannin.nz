@@ -2,6 +2,7 @@ import React from "react"
 import Link from "gatsby-link"
 
 import Nav from "components/navigation"
+import OffsiteLinks from "components/offsite-links"
 
 class Header extends React.Component {
   componentDidMount() {
@@ -31,7 +32,10 @@ class Header extends React.Component {
           <Link to="/">Matt Fannin</Link>
           <div className="description">Designer, photographer & creative thinker</div>
         </div>
+
         <Nav />
+
+        <OffsiteLinks />
       </header>
     )
   }
