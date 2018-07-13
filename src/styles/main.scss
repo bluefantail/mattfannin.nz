@@ -40,6 +40,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: $grey-dark;
+}
+
 .container {
   transition: padding 0.2s ease-in;
   display: block;
