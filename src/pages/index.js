@@ -4,7 +4,7 @@ import Link from "gatsby-link"
 export default () =>
   <section>
     <p>
-      Hey, there 👋🏻 - I design and develop product at <a href="https://fluxfederation.com" target="_blank">Flux Federation</a>.
+      Hey there 👋🏻 - I design and develop product at <a href="https://fluxfederation.com" target="_blank">Flux Federation</a>.
       My work involves many tools, including <a href="https://github.com/bluefantail" target="_blank">code</a>.
       I enjoy being the glue that helps teams translate design into great user experience.
       I’m also a <Link to="/photography" exact>photographer</Link>.
