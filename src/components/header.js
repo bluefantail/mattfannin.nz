@@ -26,7 +26,7 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <img className="profile" src="http://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=280"></img>
+        <img className="profile" src="https://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=280"></img>
 
         <div>
           <Link to="/">Matt Fannin</Link>
