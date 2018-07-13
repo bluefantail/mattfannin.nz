@@ -291,6 +291,7 @@ p {
     position: relative;
     cursor: pointer;
     background-image: $asset-close;
+    background-size: contain;
   }
 
   @media (min-aspect-ratio: break(aspect-square)) and (min-width: break(narrow)) {
