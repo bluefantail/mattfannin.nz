@@ -1,0 +1,19 @@
+// Fonts
+$font-file: 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600';
+$font-family: 'Open Sans', sans-serif;
+
+// Colours
+$grey-lightest: #eaeaea;
+$grey-light: #cccccc;
+$grey: #666666;
+$grey-dark: #4f4f4f;
+$grey-darkest: #222222;
+
+$action: #0e40ff;
+
+// Breakpoints
+$breakpoints: (
+  aspect-square: "1/1",
+  wide: "1200px",
+  narrow: "750px"
+);

@@ -1,35 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
-
+@import 'functions';
+@import 'configuration';
 @import 'assets';
 
-@function tint($color, $percentage) {
-  @return mix(white, $color, $percentage);
-}
-
-@function shade($color, $percentage) {
-  @return mix(black, $color, $percentage);
-}
-
-$grey-lightest: #eaeaea;
-$grey-light: #cccccc;
-$grey: #666666;
-$grey-dark: #4f4f4f;
-$grey-darkest: #222222;
-
-$action: #0e40ff;
-
-$breakpoints: (
-  aspect-square: "1/1",
-  wide: "1200px",
-  narrow: "750px"
-);
-
-@function break($size) {
-  @return map-get($breakpoints, $size);
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-family;
   color: $grey;
   margin: 0;
 }

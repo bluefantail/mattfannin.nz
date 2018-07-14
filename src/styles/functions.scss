@@ -1,0 +1,13 @@
+// Tint and shade
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Breakpoint helper
+@function break($size) {
+  @return map-get($breakpoints, $size);
+}
