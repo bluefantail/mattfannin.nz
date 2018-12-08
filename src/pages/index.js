@@ -10,7 +10,7 @@ export default () =>
       I’m also a <Link to="/photography" exact>photographer</Link>.
       Right now I’m captivated by the process of creating really big landscapes, but more generaly I love capturing mood, and telling a story.
       I have a background in performance design, which taught me audience is always the most important thing.
-      When I find time, I enjoy <a href="https://medium.com/@mattfannin" target="_blank">writing</a>, drawing, and trying to make games.
+      When I find time, I enjoy <a href="https://medium.com/@mattfannin" target="_blank">writing</a>, <a href="https://medium.com/@mattfannin/strange-things-you-can-do-with-software-on-the-weekend-part-2-32f0d6aa9ff1" target="_blank">drawing</a>, and trying to make games.
     </p>
     <p>
       Want to know more? <Link to="/contact" exact>Lets grab coffee</Link>.
