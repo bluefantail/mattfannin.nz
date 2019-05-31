@@ -77,6 +77,7 @@ p {
       }
     }
 
+    // Only applies when offsite-links is inside the header
     .offsite-links {
       position: fixed;
       bottom: 2em;
@@ -88,9 +89,6 @@ p {
 
       > a {
         width: 30px;
-        span {
-          display: none;
-        }
       }
     }
 
@@ -295,6 +293,10 @@ p {
     background-repeat: no-repeat;
     background-position: center center;
     display: inline-block;
+
+    span {
+      display: none;
+    }
 
     &::after {
       content: '';
