@@ -1,5 +1,5 @@
 import React from "react"
-import Link from "gatsby-link"
+import { Link } from "gatsby"
 
 import Nav from "components/navigation"
 import OffsiteLinks from "components/offsite-links"
@@ -26,7 +26,7 @@ class Header extends React.Component {
   render() {
     return (
       <header>
-        <img className="profile" src="https://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=280"></img>
+        <img className="profile" src="https://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=280" alt="Matt Fannin"></img>
 
         <div>
           <Link to="/">Matt Fannin</Link>
