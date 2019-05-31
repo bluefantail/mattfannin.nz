@@ -16,9 +16,9 @@ export default ({ children }) => (
       ]}
     />
     <Header />
-    {children()}
+    {children}
     <div className="profile-detail">
-    <img src="https://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=1000"></img>
+    <img src="https://www.gravatar.com/avatar/10bcecde76c1d8731d63687fd242d290.jpg?s=1000" alt="Matt Fannin"></img>
     <OffsiteLinks />
     <div className="close-profile"></div>
     </div>
