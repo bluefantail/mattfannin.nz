@@ -54,6 +54,8 @@ p {
     a {
       font-size: 1em;
     }
+    
+    
 
     .profile {
       max-width: 46px;
@@ -183,6 +185,7 @@ p {
     justify-content: center;
     flex-direction: column;
     padding: 0 0.5em 5em;
+    margin-top: 0;
 
     p {
       font-size: 1.15em;
@@ -200,29 +203,33 @@ p {
       justify-content: flex-start;
 
       p {
-        padding: 0 3em 0 0;
         font-size: 1.4em;
+        padding: 0 3em 0 0;
       }
     }
 
     @media (min-width: 1000px) {
       p {
-        padding: 0 4em 0 0;
-        font-size: 1.6em;
+        font-size: 1.5em;
+        padding: 0 3em 0 0;
       }
     }
 
     @media (min-width: break(wide)) {
+      margin-top: 170px;
+
       p {
-        padding: 0 5em 0 0;
-        font-size: 1.7em;
+        font-size: 1.76vw;
+        max-width: 30em;
       }
     }
 
     @media (min-width: 1400px) {
+      margin-top: 170px;
+
       p {
-        padding: 0 10em 0 0;
-        font-size: 1.85em;
+        font-size: 1.76vw;
+        max-width: 30em;
       }
     }
   }
@@ -332,6 +339,7 @@ form.contact {
   grid-template-columns: 1fr;
   max-width: 35em;
   width: 100%;
+  margin: 0 auto;
 
   label {
     margin-bottom: 0.5em;
