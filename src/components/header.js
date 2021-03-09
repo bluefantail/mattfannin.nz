@@ -30,7 +30,7 @@ class Header extends React.Component {
 
         <div>
           <Link to="/">Matt Fannin</Link>
-          <div className="description">Designer, photographer & creative thinker</div>
+          <div className="description">Designer &amp; thoughtful human</div>
         </div>
 
         <Nav />
