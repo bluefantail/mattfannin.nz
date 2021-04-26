@@ -9,7 +9,7 @@ export default () =>
         Hi there! <span role="img" aria-label="hand wave emoji">👋🏻</span>
       </p>
       <p>
-        Right now I contract product design &amp; front end for <a href="https://delivereasy.co.nz" target="_blank" rel="noopener noreferrer">Delivereasy</a>.
+        Right now I'm contracting design &amp; front end for <a href="https://delivereasy.co.nz" target="_blank" rel="noopener noreferrer">Delivereasy</a>.
         My work involves many tools, including <a href="https://github.com/bluefantail" target="_blank" rel="noopener noreferrer">code</a>.
         I enjoy being the glue that helps teams translate design into great user experience.
         I’m also a <Link to="/photography" exact>photographer</Link>.
