@@ -14,9 +14,10 @@
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^4.0.2",
-    "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.43.5",
+    "sass-loader": "^10.2.0"
   }
 }
