@@ -54,8 +54,8 @@ p {
     a {
       font-size: 1em;
     }
-    
-    
+
+
 
     .profile {
       max-width: 46px;
@@ -330,6 +330,10 @@ p {
 
     &.twitter {
       background-image: $asset-twitter;
+    }
+
+    &.flickr {
+      background-image: $asset-flickr;
     }
   }
 }
