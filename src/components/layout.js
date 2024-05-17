@@ -10,11 +10,13 @@ import styles from "styles/main.scss"
 export default ({ children }) => (
   <div className="container">
     <Helmet
-      title="Matt Fannin | Designer, photographer & creative thinker"
+      title="Matt Fannin"
       meta={[
         { name: "theme-color", content: "#ffffff" }
       ]}
-    />
+    >
+      <script defer data-domain="mattfannin.nz" src="https://plausible.io/js/script.js"></script>
+    </Helmet>
     <Header />
     {children}
     <div className="profile-detail">
