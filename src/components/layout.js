@@ -5,6 +5,9 @@ import Header from "components/header"
 import Nav from "components/navigation"
 import OffsiteLinks from "components/offsite-links"
 
+import appleTouchIcon from "icons/apple-touch-icon.png"
+import favicon from "icons/favicon.ico"
+
 import styles from "styles/main.scss"
 
 export default ({ children }) => (
@@ -15,6 +18,9 @@ export default ({ children }) => (
         { name: "theme-color", content: "#ffffff" }
       ]}
     >
+      <link rel="icon" href={favicon} sizes="32x32" />
+      <link rel="apple-touch-icon" href={appleTouchIcon} />
+
       <script defer data-domain="mattfannin.nz" src="https://plausible.io/js/script.js"></script>
     </Helmet>
     <Header />
